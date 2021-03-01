@@ -29,6 +29,7 @@ Here's a walkthrough of implemented user stories:
 
 ### Login take pic
 <img src='insta2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 ### sign up
 <img src='insta1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
