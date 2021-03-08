@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="10dp"
+    android:orientation="vertical"
     tools:context=".SignupActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <EditText
         android:id="@+id/etSignupUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:hint="Enter Username"
         android:inputType="textPersonName" />
@@ -31,11 +39,11 @@
 
     <Button
         android:id="@+id/btnRegister"
-        android:layout_width="242dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/etSignupPassword"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:text="Signup" />
 
-</RelativeLayout>
+</LinearLayout>
