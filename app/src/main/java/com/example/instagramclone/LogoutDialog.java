@@ -35,7 +35,7 @@ public class LogoutDialog extends AppCompatDialogFragment {
         btnNo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                return;
+                goMain();
             }
         });
 
@@ -51,6 +51,12 @@ public class LogoutDialog extends AppCompatDialogFragment {
         builder.setView(view);
 
        return builder.create();
+    }
+
+    private void goMain() {
+        Intent intent = new Intent(getActivity(), MainActivity.class);
+        startActivity(intent);
+
     }
 
     private void goLoginActivity() {
